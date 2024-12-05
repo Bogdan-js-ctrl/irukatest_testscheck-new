@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Rubik-VariableFont_wght.ttf) format('woff');
+}
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0;
+  font-family: Rubik;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sign {
+  color: black;
+  margin-left: auto;
+}
+.head {
+  cursor: pointer;
+}
+a {
+  text-decoration: none ;
+}
+.btn {
+  width: 190px;
+  height: 85px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 20px;
+  color: #B5B7BB;
+  background-color: #D4D6DA;
+  
+}
+
+.back {
+  margin-right: auto;
+  color: #fff;
+  background-color: #FE23BB;
+}
+.next {
+  margin-left: auto;
+}
+
+
+.road {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.section_1 {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1600px) {  
+ .btn {
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+}
+.section_2 {
+  margin-top: 50px;
+  width: 60%;
+}
+.mainText {
+  font-size: 36px;
+  color: #003BFF;
+  margin-bottom: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  font-weight: 400;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: solid 1px #003BFF;
+  border-radius: 6px;
+
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 5px;
+    top: 0px;
+    width: 8px;
+    height: 14px;
+    border: solid #000000;
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.box {
+  margin-left: auto;
+  margin-top: 50px;
+  width: 25%;
+  height: 500px;
+  border: solid 2px #E3E6E5;
+  border-radius: 20px;
+  
+  justify-items: left;
+  padding: 30px;
+}
+.flex {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.text-mini {
+  color: #67717D;
+  font-size: 20px;
+  font-weight: 400;
+}
+.line {
+  width: 100%;
+  border: solid 1px #E3E6E5;
+}
+.text-main {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.btn.disabled {  
+  background-color: grey; /* Цвет для отключенной кнопки */  
+  color: white;  
+}  
+.btn.active {  
+  background-color: #003BFF; /* Новый цвет фона */  
+  color: white;  
+}

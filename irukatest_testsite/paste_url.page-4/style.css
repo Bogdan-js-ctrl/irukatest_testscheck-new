@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Rubik-VariableFont_wght.ttf) format('woff');
+}
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0;
+  font-family: Rubik;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sign {
+  color: black;
+  margin-left: auto;
+}
+.head {
+  cursor: pointer;
+}
+a {
+  text-decoration: none ;
+}
+.btn {
+  width: 190px;
+  height: 85px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 20px;
+  color: #B5B7BB;
+  background-color: #D4D6DA;
+  
+}
+
+.back {
+  margin-right: auto;
+  color: #fff;
+  background-color: #FE23BB;
+}
+.next {
+  margin-left: auto;
+}
+
+
+.road {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.section_1 {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1600px) {  
+
+  .btn {
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: Rubik;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+}
+.section_2{
+  display: grid;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.copy,.save{
+  width: 50%;
+  color: #fff;
+  background-color: #003BFF;
+  height: 70px;
+}
+.text {
+  margin: 50px 10px;
+  background-color: #fff;
+  z-index: 0;
+  font-size: 20px;
+}
+.line {
+  border: solid 2px #E3E6E5;
+  margin: 0 55px;
+  width: 200px;
+}
+.line_and_text {
+  display: flex;
+  align-items: center;
+}
